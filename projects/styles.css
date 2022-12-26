@@ -1,0 +1,85 @@
+html{
+    background-color: #EBDFD3;
+    font-family: 'jacques francois';
+}
+
+@font-face {
+    font-family: 'jacques francois';
+    src: url('/JacquesFrancois-Regular.ttf');
+}
+
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C5451;
+    margin: auto;
+    border-radius: 5px;
+    height: 6.5rem;
+    height: auto;
+    margin-top: 1.1rem;
+    max-width: 90rem;
+}
+
+.menuBar p{
+    font-size: 2rem;
+    color: #EEEDEB;
+    
+}
+
+.menuBar a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:#EEEDEB;
+}
+
+
+.subHeaders{
+    max-width: 50rem;
+}
+
+iframe{
+    width: 70rem;
+    height: 40rem;
+    border-radius: 5px;
+    border: 7px solid rgb(137, 81, 66, 0.67);
+    box-shadow: 10px 10px rgba(10, 0, 0, 0.15);
+}
+
+.iframeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+}
+
+img{
+    max-width: 20rem;
+    border-radius: 5px;
+    border: 4px solid rgb(137, 81, 66, 0.67);
+    margin-top: 1rem;
+}
+
+
+li{
+    margin-top: 0.8rem;
+}
+
+video{
+    border: 4px solid rgb(137, 81, 66, 0.67);
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contentContainer{
+    max-width: 70rem;
+    margin: auto;
+}
+
+.bodyContainer{
+    margin-top: 5rem;
+}
+
+.headers{
+    margin-left: 9rem;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-16">
+        <title>"Edrick Portfolio"</title>
+        <link href="./index.css" rel="stylesheet" type = "text/css">
+    </head>
+
+    <body>
+        <div class = "menubar">
+
+                <div id = "sunIcon">
+                    <img src = "./images/sunIcon.png" alt = "sunIcon" style = "max-height: 3rem;">
+                </div>
+
+                <div class = "menuButtons">
+                    <a class = "buttonElement" href="#aboutPageBreak">About</a>
+                    <a class = "buttonElement" href="#skillsPageBreak">Skills</a>
+                    <a class = "buttonElement" href="#projectPageBreak">Projects</a>
+                    <a class = "buttonElement" id = "socialDrop" href="">Socials</a>
+                </div>
+
+                <div class="socialDrop">
+                    <div id = "copiedMessage">
+                        <p>Copied to clipboard!</p>
+                    </div>
+
+                    <div>
+                        <!-- <a><img src = "./images/mailIcon.png" alt = "mail icon click to copy" style = "width: 2rem;"></a> -->
+                        <input  value = "edrickgro@gmail.com" style = "width: 2.3rem; margin-right: 1.8rem;"type="image" src="./images/mailIcon.png" id = "mailIcon" onclick="copy()"/>
+                    </div>
+                    <div>
+                        <a href = "https://www.linkedin.com/in/edrick-guerrero-a8182118b/" target="_blank"><img src = "./images/LinkedIn.png" alt = "Linked In profile link" style = "width: 2rem;"></a>
+                    </div>
+                    <div>
+                        <a href = "https://github.com/Edrickgro" target = "_blank"><img src = "./images/githubIcon.png" alt = "Github profile Link" style = "width: 2rem;"></a>
+                    </div>
+                </div>
+        </div>
+
+        <script>
+            function copy() {
+              var copyText = document.getElementById("mailIcon");
+              copyText.select();
+              navigator.clipboard.writeText(copyText.value);
+
+              var copyMessage = document.getElementById("copiedMessage");
+              copyMessage.style.opacity = 1;
+
+              setTimeout(() => {copyMessage.style.opacity = 0;}, 1000)
+            }
+        </script>
+
+        <div id = "introductionPage">
+
+
+            <div id = "introductionPageText">
+
+                <!-- <a style = "color: #BC673C;">a student</a> -->
+               
+                <div class="content-slider">
+                    <div>
+                        <a style = "color: #332424;;">Edrick,</a> 
+                    </div>
+                    <div class="slider">
+                        <div class="mask">
+                            <ul>
+                                <li class="anim1">
+                                <div class="quote"> a student</div>
+                                </li>
+                                <li class="anim2">
+                                <div class="quote"> a developer</div>
+                                </li>
+                                <li class="anim3">
+                                <div class="quote"> an instructor</div>
+                                </li>
+                                <li class="anim4">
+                                <div class="quote"> a bicyclist</div>
+                                </li>
+                                <li class="anim5">
+                                <div class="quote"> a researcher</div>
+                                </li>
+                            </ul>   
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <p style = "color: #332424; font-size: 1.5rem; margin-top: 1rem;">navigating the cross between technology, accessibility, and education</p>
+                <button id = "modalButton">Resume</button>
+
+                <div id="resumeModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <iframe src = "./Edrick_Resume.pdf" width = "100%" height = "750rem"></iframe>
+                    </div>
+                  
+                </div>
+
+                <script>
+                    var modal = document.getElementById("resumeModal");
+                    var btn = document.getElementById("modalButton");
+                    var span = document.getElementsByClassName("close")[0];
+
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    
+                    
+                </script>
+
+            </div>
+
+
+            <div>
+                <img alt = "selfPortrait" src = "./images/portrait.png" style = "max-width: 25rem; border-radius:40%;">
+            </div>
+
+        </div>
+
+        <div id = "aboutPageBreak">
+            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 10rem;">
+        </div>
+
+
+        <div id = "aboutPage">
+
+            <div style = "margin-top: 8rem; transform: rotate(22deg)">
+                <img class = "cactus" style = "width: 3rem;" src = "images/cactusVector.png">
+            </div>
+
+            <div>
+                <img alt = "mountains portrait" src = "./images/mountains2D.png" style = "max-width: 38rem;">
+            </div>
+
+            <div style = "max-width: 28rem; margin-left: 5rem;">
+                <p>
+                    The simple, humble colors and stature of the California
+                    mountains that I grew up with have allowed me to embrace
+                    what others may not value as a first-generation, low income
+                    and native spanish speaker.
+
+                </p>
+                <br>
+                <p>
+                    With software engineering, I hope to cultivate human technology
+                    and support communities by focusing my work on education,
+                    exploration, and accessibility.
+                </p>
+            </div>
+
+            <div style = "margin-top: 8rem;">
+                <img class = "cactus" style = "width: 2rem;"src = "images/cactusVector.png">
+            </div>
+
+        </div>
+
+        <div id = "skillsPageBreak">
+            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 7rem;">
+        </div>
+
+        <div style = "margin-left: 7rem; margin-top: 2rem;font-size: 1.7rem;">
+            <p>Skills</p>
+        </div>
+
+        <div class = "skillsPage">
+            <p>Java</p>
+            <img alt = "circleImage" src = "images/circle.png">
+            <p>Python</p>
+            <img alt = "circleImage" src = "images/circle.png">
+            <p>HTML/CSS</p>
+            <img alt = "circleImage" src = "images/circle.png">
+            <p>Javascript</p>
+            <img alt = "circleImage" src = "images/circle.png">
+            <p>UI/UX Design</p>
+
+        </div>
+
+        <div id = "projectPageBreak">
+            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 5rem;">
+        </div>
+
+
+        <div style = "margin-left: 7rem; margin-top: 2rem;font-size: 1.7rem;">
+            <p>Projects</p>
+        </div>
+        <div class = "projectSlide">
+
+            <div class = "projectSlideElement" id = "test">
+                <p>Algorithm Path Visualizer - Java</p>
+                <a href = "projects/algorithms/algorithms.html" target="_blank"><img alt = "algorithm project" src = "projects/algorithms/images/algorithms_screen.png"></a>
+                
+            </div>
+
+            <div class = "projectSlideElement">
+                <p>Visualizing Seamcarving border-radius - Java</p>
+                <a href = "./projects/seamcarve/seamcarve.html" target="_blank"> <img src = "./projects/seamcarve/images/seamcarve_demo.png" alt = "seamcarve project" style = "width: 37rem;"></a>
+            </div>
+
+            <div class = "projectSlideElement">
+                <p>Gesture-Controlled Mouse - Python</p>
+                <a href = "./projects/gestureMouse/gesture.html" target = "_blank"><img src = "./projects/gestureMouse/images/gesture_demo.png" alt = "gesture project"></a>
+            </div>
+
+            <div class = "projectSlideElement">
+                <p>Screen Reader Accessibility Tool - TypeScript</p>
+                <a href = "./projects/screenReader/screenReader.html" target="_blank"><img src = "images/screenReader.png" alt = "screen reader project"></a>
+            </div>
+
+        </div>
+    </body>
+</html>

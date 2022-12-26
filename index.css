@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+@font-face {
+    font-family: 'jacques francois';
+    src: url('/JacquesFrancois-Regular.ttf');
+}
+
+
+
+html{
+    background-color: #EBDFD3;
+    font-family: 'jacques francois';
+    scroll-behavior: smooth;
+}
+
+.menubar{
+    /* #EFE6DD */
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    max-width: 81rem;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.socialDrop{
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+  
+.menubar a {
+ float: left;
+ color: #000000;
+ text-align: center;
+ padding: 2.4rem 2rem;
+ text-decoration: none;
+ font-weight:400;
+ font-size: 1.12rem;
+ text-shadow: 4px 4px 4px rgba(121, 142, 123, 0.5);
+ }
+
+.buttonElement{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.buttonElement:hover{
+  color:#BC673C;
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#copiedMessage{
+  opacity: 0;
+  margin-right: 1rem;
+  background-color:rgba(121, 142, 123, 0.192);
+  border-radius: 6px;
+  text-align: center;
+  height: 2rem;
+  width: 12rem;
+  margin-bottom: 0.3rem;
+  
+}
+
+#copiedMessage p{
+  padding-top: 0.2rem;
+}
+
+.modal{
+  display:none;
+  z-index: 1;
+  background-color: #3C5451;
+  overflow: auto;
+  position: fixed;
+  width: 50rem;
+  height: 50rem;
+  left: 22rem;
+  top: 4rem;
+  border-radius: 5px;
+  animation: popup 0.4s;
+}
+
+#modalButton{
+  border-radius: 9px;
+  width: 8rem;
+  height: 1.7rem;
+  border: none;
+  background-color:rgba(51, 36, 36, 0.698);
+  margin-top: 1rem;
+  font-family: 'jacques francois';
+  color: rgb(252, 250, 248, 0.85);
+  font-size: 1rem;
+}
+
+#modalButton:hover{
+  background-color:rgba(51, 36, 36, 0.314);
+  cursor: pointer;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#introductionPage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 9rem;
+    text-align: center;
+    align-items: center;
+    background-image: url("./images/mountainsVector5.png");
+    background-size: 55rem;
+    max-width: 80rem;
+
+}
+
+#introductionPage a{
+    font-size: 3.5rem;
+}
+
+#introductionPageText{
+    width: 35rem;
+    margin-left: 7rem;
+}
+
+#sunIcon{
+  animation: rotation 15s infinite;
+}
+
+#aboutPage{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cactus{
+  animation: rotateBack 2s infinite;
+}
+
+#aboutPage p{
+    color: #332424;
+    font-size: 1.2rem;
+}
+
+.skillsPage img{
+    max-width: 1rem;
+    height: 1rem;
+    margin: auto;
+}
+
+.skillsPage{
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    font-size: 1.5rem;
+}
+
+.projectSlide{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectSlide img{
+  max-width: 40rem;
+  border-radius: 9px;
+  border: 7px solid rgb(137, 81, 66, 0.67);
+  box-shadow: 10px 10px rgba(10, 0, 0, 0.15);
+  margin-top: 1rem;
+  height: 22rem;
+}
+
+.projectSlideElement{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size: 1.1rem;
+  
+}
+
+.projectSlideElement img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  display: block;
+}
+
+.projectSlideElement:hover img{
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.content-slider {
+  width: 35rem;
+  height: 5rem;
+  display: flex;
+}
+
+.slider {
+  height: 5rem;
+  width: 23rem;
+  overflow: visible;
+}
+
+.mask {
+  overflow: hidden;
+  height: 5rem;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  position: absolute;
+  list-style: none;
+}
+
+.slider .quote {
+  font-size: 3.5rem;
+  color:#BC673C;
+  margin-left: 1rem;
+}
+
+
+.slider li.anim1 {
+  animation: cycle 15s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 15s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 15s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 15s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 15s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0rem;
+  }
+  4% {
+    top: 0rem;
+  }
+  16% {
+    top: 0rem;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -2rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  16% {
+    top: -2rem;
+    opacity: 0;
+  }
+  20% {
+    top: 0rem;
+    opacity: 1;
+  }
+  24% {
+    top: 0rem;
+    opacity: 1;
+  }
+  36% {
+    top: 0rem;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  36% {
+    top: -2rem;
+    opacity: 0;
+  }
+  40% {
+    top: 0rem;
+    opacity: 1;
+  }
+  44% {
+    top: 0rem;
+    opacity: 1;
+  }
+  56% {
+    top: 0rem;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  56% {
+    top: -2rem;
+    opacity: 0;
+  }
+  60% {
+    top: 0rem;
+    opacity: 1;
+  }
+  64% {
+    top: 0rem;
+    opacity: 1;
+  }
+  76% {
+    top: 0rem;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -2rem;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  76% {
+    top: -2rem;
+    opacity: 0;
+  }
+  80% {
+    top: 0rem;
+    opacity: 1;
+  }
+  84% {
+    top: 0rem;
+    opacity: 1;
+  }
+  96% {
+    top: 0rem;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 2rem;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes rotateBack{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(8deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes popup {
+  0%{
+    transform: translate(0rem, 20rem);
+  }
+  5%{
+    transform: translate(0rem, 19rem);
+  }
+  10%{
+    transform: translate(0rem, 18rem);
+  }
+  15%{
+    transform: translate(0rem, 17rem);
+  }
+  20%{
+    transform: translate(0rem, 16em); 
+  }
+  25%{
+    transform: translate(0rem, 15rem);
+  }
+  30%{
+    transform: translate(0rem, 14rem); 
+  }
+  35%{
+    transform: translate(0rem, 13rem);
+  }
+  40%{
+    transform: translate(0rem, 12rem); 
+  }
+  45%{
+    transform: translate(0rem, 11rem);
+  }
+  50%{
+    transform: translate(0rem, 10rem); 
+  }
+  55%{
+    transform: translate(0rem, 9rem);
+  }
+  60%{
+    transform: translate(0rem, 8rem); 
+  }
+  65%{
+    transform: translate(0rem, 7rem);
+  }
+  70%{
+    transform: translate(0rem, 6rem); 
+  }
+  75%{
+    transform: translate(0rem, 5rem);
+  }
+  80%{
+    transform: translate(0rem, 4rem); 
+  }
+  85%{
+    transform: translate(0rem, 3rem);
+  }
+  90%{
+    transform: translate(0rem, 2rem); 
+  }
+  95%{
+    transform: translate(0rem, 1rem);
+  }
+  100%{
+    transform: translate(0rem, 0rem); 
+  }
+}
+
+
+
+
+
+
