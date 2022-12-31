@@ -4,8 +4,8 @@
     box-sizing: border-box;
 
 
-    /* color: #0f0 !important;
-    outline: solid #f00 1px !important; */
+    /* color: #0f0 !important; */
+    /* outline: solid #f00 1px !important; */
 }
 
  
@@ -13,8 +13,6 @@
     font-family: 'jacques francois';
     src: url('./JacquesFrancois-Regular.ttf');
 }
-
-
 
 html{
     background-color: #EBDFD3;
@@ -34,19 +32,39 @@ html{
     margin-top: 1rem;
     align-items: center;
     flex-wrap: wrap;
-    
-    
 }
 
 .socialDrop{
-  height: 5rem;
+  margin-top: 2.5rem;
+  width: 15rem;
+  height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
+.socialButton{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
 
-  
+#copiedMessage{
+  opacity: 0;
+  background-color:rgba(121, 142, 123, 0.192);
+  border-radius: 6px;
+  text-align: center;
+  height: 2rem;
+  width: 12rem;
+  position: relative;
+}
+
+#copiedMessage p{
+  padding-top: 0.3rem;
+}
+
 .menubar a {
  float: left;
  color: #000000;
@@ -71,21 +89,7 @@ html{
 	transform: scale(1.1);
 }
 
-#copiedMessage{
-  opacity: 0;
-  margin-right: 1rem;
-  background-color:rgba(121, 142, 123, 0.192);
-  border-radius: 6px;
-  text-align: center;
-  height: 2rem;
-  width: 12rem;
-  margin-bottom: 0.3rem;
-  
-}
 
-#copiedMessage p{
-  padding-top: 0.2rem;
-}
 
 .modal{
   display:none;
@@ -93,27 +97,17 @@ html{
   background-color: #3C5451;
   overflow: auto;
   position: fixed;
-  width: 50rem;
-  height: 50rem;
+  width: 50%;
+  height: auto;
   left: 22rem;
   top: 4rem;
   border-radius: 5px;
   animation: popup 0.4s;
 }
 
-#modalButton{
-  border-radius: 9px;
-  width: 8rem;
-  height: 1.7rem;
-  border: none;
-  background-color:rgba(51, 36, 36, 0.698);
-  margin-top: 1rem;
-  font-family: 'jacques francois';
-  color: rgb(252, 250, 248, 0.85);
-  font-size: 1rem;
-}
 
-#modalButton:hover{
+
+#mButton:hover{
   background-color:rgba(51, 36, 36, 0.314);
   cursor: pointer;
 }
@@ -144,18 +138,39 @@ html{
     align-items: center;
     background-image: url("./images/mountainsVector5.png");
     background-size: 55rem;
-    max-width: 80rem;
-
+    max-width: 70rem;
 }
 
-#introductionPage a{
-    font-size: 3.5rem;
-}
 
 #introductionPageText{
-    width: 35rem;
-    margin-left: 7rem;
+    max-width: 35rem;
+    margin-bottom: 5rem;
 }
+
+
+#modalButton{
+  width: 100%;
+  margin-top: 1rem;
+
+}
+
+#mButton{
+  font-size: 1.2rem;
+  background-color:rgba(51, 36, 36, 0.698);
+  font-family: 'jacques francois';
+  border-radius: 9px;
+  width: 8rem;
+  text-align: center;
+  height: 1.7rem;
+  margin: auto;
+}
+
+#mButton a{
+  color: rgb(252, 250, 248, 0.85);
+  text-decoration: none;
+}
+
+
 
 #sunIcon{
   animation: rotation 15s infinite;
@@ -166,10 +181,13 @@ html{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 80rem;
+    margin: auto;
+    margin-top: 9rem;
 }
 
 .cactus{
-  animation: rotateBack 2s infinite;
+  /* animation: rotateBack 2s infinite; */
 }
 
 #aboutPage p{
@@ -184,16 +202,21 @@ html{
 }
 
 .skillsPage{
-    margin:auto;
+    margin: auto;
     margin-top: 2rem;
     margin-bottom: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     max-width: 60rem;
     font-size: 1.5rem;
 }
 
+
+.skillsPage p{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 .projectSlide{
   display: flex;
   justify-content: space-around;
@@ -204,18 +227,25 @@ html{
   margin-top: 5rem;
   margin-left: 5rem;
   font-size: 1.1rem;
-  max-width: 40rem;
+  width: 36rem;
+  height: auto;
+}
+
+.projectSlideElement p{
+  background-color:rgba(64, 88, 86, 0.082);
+  border-radius: 6px;
+  width: 24rem;
 }
 
 .projectSlideElement img{
   border-radius: 9px;
   border: 7px solid rgb(137, 81, 66, 0.67);
-  box-shadow: 10px 10px rgba(10, 0, 0, 0.15);
   margin-top: 1rem;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  height: 90%;
   width: 100%;
 }
 
@@ -225,14 +255,15 @@ html{
 }
 
 .content-slider {
-  width: 35rem;
-  height: 5rem;
+  max-width: 100%;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slider {
-  height: 5rem;
-  width: 23rem;
+  /* width: 20rem; */
+  width: 22.9rem;
   overflow: visible;
 }
 
