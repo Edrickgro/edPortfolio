@@ -216,22 +216,22 @@ html{
   margin-right: 1rem;
   margin-left: 1rem;
 }
+
 .projectSlide{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .projectSlideElement{
   margin-top: 5rem;
-  margin-left: 5rem;
+  margin-left: 0rem;
   font-size: 1.1rem;
   width: 36rem;
   height: auto;
 }
 
 .projectSlideElement p{
-  background-color:rgba(64, 88, 86, 0.082);
   border-radius: 6px;
   width: 24rem;
 }
