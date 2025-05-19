@@ -3,249 +3,410 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-16">
-        <title>Ed Portfolio</title>
+        <title>Edrick's  Portfolio</title>
         <link href="./index.css" rel="stylesheet" type = "text/css">
         <link rel="icon" type="image/x-icon" href="favicon.ico?">
+        
     </head>
 
     <body>
-        <div class = "menubar">
+        
+        <section id = "grid-container">
 
-                <div id = "sunIcon">
-                    <img src = "./images/sunIcon.png" alt = "sunIcon" style = "max-height: 3rem;">
+            <div id = "first-grid-item"><span>EDR</span></div>
+
+            <div id = "second-grid-item">
+                 <img alt = "self-portrait" id = "main-portrait" src = "./images/main-portrait.png">
+            </div>
+
+            <div id = "third-grid-item"><span>ICK</span></div>
+
+            <div id = "fourth-grid-item">
+                <img alt = "colorful striped background. A body is leaning towards one knee, holding a gyoza. The body has a bike wheel for a head" id = "rug-image" src = "./images/poser.png">
+                <p>◑</p>
+            </div>
+
+            <div id = "fifth-grid-item">
+                <a style = "font-size: 1.8rem;" href="https://www.linkedin.com/in/edrick-guerrero-a8182118b/" target = "_blank">linkedin</a>
+                <a style = "font-size: 1.8rem;" href="https://github.com/Edrickgro" target = "_blank">github</a>
+                <a style = "font-size: 1.8rem;" href="mailto:edrickgro@gmail.com">email</a>
+                <a href="images/resume ('25).pdf" target = "_blank">resume</a>
+                <a href="#projectPageBreak">projects</a>
+
+                <p style = "font-size: 2vw; margin-top: 2rem;">student, biking, programming, knitting, community work, public transport</p>
+            </div>
+
+        </section>
+
+
+        <hr>
+
+         <section class = "about-container">
+
+            <div style = "width: 30%;">
+                <span style = "font-size: 7vw;text-align: center;color: var(--name-color);text-shadow: 3px 3px var(--text-shadow-color);"><b>ABOUT</b></span>
+                <div style ="width: 100%; margin-top: 8%;">
+                <img alt = "sideways view of a train looking to the right" src = "images/trainer.png" style = "width: 100%;">
+                <img alt = "sideways view of a train upside down and looking to the left"src = "images/trainer.png" style = "width: 100%; rotate: 180deg;">
                 </div>
+            </div>
 
-                <div class = "menuButtons">
-                    <a class = "buttonElement" href="#aboutPageBreak">About</a>
-                    <a class = "buttonElement" href="#skillsPageBreak">Skills</a>
-                    <a class = "buttonElement" href="#projectPageBreak">Projects</a>
-                </div>
-
-                <div class="socialDrop">
-                    <!-- <div class = "socialButton"> -->
-                        <!-- <a><img src = "./images/mailIcon.png" alt = "mail icon click to copy" style = "width: 2rem;"></a> -->
-                        <!-- <input  value = "edrickgro@gmail.com" style = "width: 2.3rem;" type="image" src="./images/mailIcon.png" id = "mailIcon" onclick="copy()"/> -->
-
-                        <!-- <div id = "copiedMessage">
-                            <p>Copied to clipboard!</p>
-                        </div> -->
-
-                    <!-- </div> -->
-                    <!-- <div class = "socialButton"> -->
-                        <!-- <a href = "https://www.linkedin.com/in/edrick-guerrero-a8182118b/" target="_blank"><img src = "./images/LinkedIn.png" alt = "Linked In profile link" style = "width: 2rem;"></a> -->
-                    <!-- </div> -->
-                    <!-- <div class = "socialButton"> -->
-                        <!-- <a href = "https://github.com/Edrickgro" target = "_blank"><img src = "./images/githubIcon.png" alt = "Github profile Link" style = "width: 2rem;"></a> -->
-                    <!-- </div> -->
-
-                    <div class = "socialButton">
-
-                        <div>
-                            <input  value = "edrickgro@gmail.com" style = "width: 2.3rem;" type="image" src="./images/mailIcon.png" id = "mailIcon" onclick="copy()"/>
-                        </div>
-
-                        <div>
-                            <a href = "https://www.linkedin.com/in/edrick-guerrero-a8182118b/" target="_blank" style = "padding: 0;"><img src = "./images/LinkedIn.png" alt = "Linked In profile link" style = "width: 2rem;"></a>
-                        </div>
-
-                        <div>
-                            <a href = "https://github.com/Edrickgro" target = "_blank" style = "padding:0;"><img src = "./images/githubIcon.png" alt = "Github profile Link" style = "width: 2rem;"></a>
-                        </div>
-
-                    </div>
-
-                    <div id = "copiedMessage">
-                        <p>Copied to clipboard!</p>
-                    </div>
-                    
-
-                </div>
-
+            <!-- #FFB9DC -->
+            <div class = "about-text" style = "border-style: dashed; padding: 0.8%; background-color: #cee1b1d4;">
+                <p>
                 
-               
+                I'm a dedicated CS university student based in Southern California with experience in research, outreach, and education. 
+                With a unique interest in grassroots social change in and outside of software development, I explore
+                sectors such as disability, education, and climate/energy. Such interests guide my dabbling into 
+                different languages, frameworks, and sectors within SWE.
+                </p>
+
+                <p>
+                In tandem with programming, I have also dedicated my life to biking and public transportation, as well as community work
+                and physical arts. I believe its important to recognize the ways in much of the work that we do that is seemingly disjoint is not,
+                and this principle is part of what guides my overall learning motivation.
+                </p>
+            </div>
+
+            <div style = " width: 20%; margin-top:5%;">
+                <img  style ="width: 100%;"alt = "a colorful yellow-green geometric background with the text 'I still use stack overflow'. A body is posing with one leg bent upward. The body has computer memory for a head" src = "./images/up_dark.png">
+                
+            </div>
+        </section>
+    
+
+        <hr>
+
+        <div class = "header-container">
+            <span><b>PROJECTS</b></span>
         </div>
 
-        <script>
-            function copy() {
-              var copyText = document.getElementById("mailIcon");
-              copyText.select();
-              navigator.clipboard.writeText(copyText.value);
+        <section id = "projectPageBreak">
+            
+            <!-- 1. max patcher
+                2. gesture controlled mouse
+                3. selenium art
+                4. algorith visualizer
+                5. hopfield networks
+                6. z3 project thing
+                7. social technical systems work project -->
 
-              var copyMessage = document.getElementById("copiedMessage");
-              copyMessage.style.opacity = 1;
-
-              setTimeout(() => {copyMessage.style.opacity = 0;}, 1000)
-            }
-        </script>
-
-        <div id = "introductionPage">
+            <!-- ********************************** -->
 
 
-            <div id = "introductionPageText">
+             <div class = "project-column-one">
+                <h1>◎<span>  algorithm visualizer  </span>◎</h1>
+                <h3>vanilla java | swing | algorithms & data structures</h3>
+                <a href = "https://github.com/Edrickgro/Algorithms" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+            
 
-                <!-- <a style = "color: #BC673C;">a student</a> -->
-               
-                <div class="content-slider">
+                <div>
+
                     <div>
-                        <a style = "color: #332424; font-size: 3.5rem;">Edrick,</a> 
-                    </div>
-                    <div class="slider">
-                        <div class="mask">
-                            <ul>
-                                <li class="anim1">
-                                <div class="quote"> an instructor</div>
-                                </li>
-                                <li class="anim2">
-                                <div class="quote"> a developer</div>
-                                </li>
-                                <li class="anim3">
-                                <div class="quote"> a student</div>
-                                </li>
-                                <li class="anim4">
-                                <div class="quote"> a bicyclist</div>
-                                </li>
-                                <li class="anim5">
-                                <div class="quote"> a researcher</div>
-                                </li>
-                            </ul>   
-                        </div>
-                    </div>
-                </div>
 
+                        <p><b>WHAT</b>: Visualizing algorithms (dijktra's, a*, depth-first search) in vanilla java with a ui made in swing. The start node (teal) attempts
+                                to find the target node (red) through the chosen algorithm. Blue pixels fill the area, showcasing explored areas. Once the target node is found,
+                                a green path is drawn to show the shortest path.
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: understanding of algorithm pathfinding, hardening java skills, art
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: custom hand-made pixel art, ability to add walls and generate random ones, clear board
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+               
+            </div>
+
+            <div class = "project-column-two">
+
+                <div>
+                     <video controls>
+                        <source src="./projects/algorithms/images/algorithms_demo.mp4" type="video/mp4">   
+                    </video> 
+                </div>
                 
+            </div>
 
-                <div style = "width: 100%;">
-                    <p style = "color: #332424; font-size: 1.5rem; margin-top: 1rem;">navigating the cross between technology, accessibility, and education</p>
-                </div>
+            <!-- ********************************** -->
 
-                <div id = "modalButton">
-                    <div id = "mButton">
-                        <a href = "Edrick_Resume.pdf" target = "_blank">Resume</a>
+            <div class = "project-column-one">
+                <h1>◎<span>  selenium art  </span>◎</h1>
+                <h3>javascript | web worker | cv2 | generative art | multi-threading </h3>
+                <a href = "https://github.com/Edrickgro/SeleniumArt" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+                <a href = "https://edrickgro.github.io/SeleniumArt/" target = "_blank"><img src = "./images/web-icon.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem; margin-left:1%;"></a>
+            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: A series of algorithms that create generative art. The main one, extended difference of gaussians, is based
+                            off a <a href = "https://users.cs.northwestern.edu/~sco590/winnemoeller-cag2012.pdf" target = "_blank">University of Missouri research paper</a>. Other algorithms include local binary pattern (custom), canny (cv), object (custom), kmeans (cv), and generate (custom).
+                            (see website for more info)
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: interesting applications with mathematical concepts, no javascript implementation of it, art
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: upload image or video, several parameters and algorithm combinations to choose from
+                        </p>
+
                     </div>
+                    
+
                 </div>
+               
+            </div>
 
-                <!-- <div id="resumeModal" class="modal">
+            <div class = "project-column-two">
 
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <iframe src = "./Edrick_Resume.pdf" width = "100%" height = "750rem"></iframe>
+                <div>
+                     <video controls>
+                        <source src="./projects/selenium/images/selenium-video.mp4" type="video/mp4">   
+                    </video> 
+                </div>
+                
+            </div>
+
+            <!-- ********************************** -->
+            
+            <div class = "project-column-one">
+                <h1>◎<span>  hopfield networks  </span>◎</h1>
+                <h3>python| tensorflow | machine learning </h3>
+                <a href = "https://github.com/Wonder947/CS1470-Deep-Learning-Final-Project/blob/main/FinalReflection.pdf" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: Hopfield networks retrieve patterns from "memory", inspired by the human brain. This group project implements a modern Hopfield network,
+                            which serves continous rather than binary states and an update rule that is similar to attention in transfomers. This an implementation inspired by
+                             <a href = "https://arxiv.org/abs/2008.02217" target = "_blank">this research paper</a>
+
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: interesting connection to human biology, large amount of applications 
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: CIFAR10 dataset with RGB and greyscale, vectorization for image comparison, better results than paper
+                        </p>
+
                     </div>
-                  
-                </div> -->
-
-                <!-- <script>
-                    var modal = document.getElementById("resumeModal");
-                    var btn = document.getElementById("modalButton");
-                    var span = document.getElementsByClassName("close")[0];
-
-                    btn.onclick = function() {
-                      modal.style.display = "block";
-                    }
                     
-                    span.onclick = function() {
-                      modal.style.display = "none";
-                    }
+
+                </div>
+               
+            </div>
+
+            <div class = "project-column-two">
+
+                <div>
+                    <img src = "projects/hopfield/images/hopfield-poster.png">
+                </div>
+                
+            </div>
+
+
+            <!-- ********************************** -->
+
+            <div class = "project-column-one">
+                <h1>◎<span>  gesture controlled mouse  </span>◎</h1>
+                <h3>python | cv2 | computer vision</h3>
+                <a href = "https://github.com/Edrickgro/GestureControlledMouse" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: Tool that allows a user to control their computer without a mouse nor a quality camera with the help of a special glove. The main algorithm
+                            is the scale-invariant feature transform (SIFT) program which compares the euclidean distance of several different features. This this more of a proof of concept for an accessibility tool. Future iterations
+                            would include getting rid of the glove and creating an eye tracker.
+                            
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: doorstep toward addressing the digital divide with accessibility
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: special glove with shapes to detect orientation, calibration phase to better detect shapes, good performance
+                        </p>
+
+                    </div>
                     
+
+                </div>
+               
+            </div>
+
+            <div class = "project-column-two">
+
+                <div>
+                     <video controls>
+                        <source src="./projects/gestureMouse/images/gestureVideo.mp4" type="video/mp4">   
+                    </video> 
+                </div>
+                
+            </div>
+
+            <!-- ********************************** -->
+
+            <div class = "project-column-one">
+                <h1>◎<span>  max patch  </span>◎</h1>
+                <h3>max patch | python | tech art & music </h3>            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: Max Patch is tool used to make interactive software, primarily music, sound effects, and graphics. There are several parameters that can affect the music in the backend,
+                            but UI allows for binary. With Javascript, this binary is converted into the closest word it could find and then a corresponding video graphic. The script further analyzes the
+                            video and chooses the main "mood" that the video is portraying. Finally, the the video's audio is fed back into the music program. As such, seemingly random binary inputs are
+                            converted into art.
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: my inability to play an instrument but ability to program is an interesting merge
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: words and videos can be chosen from pre-selected list, several different paramters that change music and graphics
+                        </p>
+
+                    </div>
                     
-                </script> -->
 
+                </div>
+               
+            </div>
+
+            <div class = "project-column-two">
+
+                <div>
+                     <video controls>
+                        <source src="./projects/max/images/max-video.mp4" type="video/mp4">   
+                    </video> 
+                </div>
+                
+            </div>
+
+            <!-- ********************************** -->
+
+            <div class = "project-column-one">
+                <h1>◎<span>  disaster simulation  </span>◎</h1>
+                <h3>python | Z3 optimizer | simulation & optimization </h3>
+                <a href = "https://github.com/Edrickgro/Disaster-Simulation-Z3" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: Disaster simulation using the z3 optimizer. Teams and disasters (fire) and either manually or randomly created, each with different stats/resources. These
+                            parameters are fed into the optimizer which then outputs the best possible resource allocation. Each iteration updates the stats/resources of each team and disaster. The simulation
+                            is considered to be successful if all disasters are contained, and unsuccessful if not. 
+
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: natural disasters are becoming more prevalent, testing z3 optimizer
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: custom-made UI in tkinter, add different types of disasters, manual and automatic team and disaster creation
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+               
+            </div>
+
+            <div class = "project-column-two">
+
+                <div>
+                     <video controls>
+                        <source src="./projects/z3simulation/images/z3video.mp4" type="video/mp4">   
+                    </video> 
+                </div>
+                
             </div>
 
 
-            <div>
-                <img alt = "selfPortrait" src = "./images/portrait.png" style = "max-width: 25rem; border-radius:40%;">
+            <!-- ********************************** -->
+
+            <div class = "project-column-one">
+                <h1>◎<span>  digital divide review  </span>◎</h1>
+                <h3>sociotechnical analysis</h3>
+                <a href = "https://github.com/Edrickgro/Algorithms" target = "_blank"><img src = "./images/github-logo.png" alt = "Algorithm Visualizer Github Link" style = "width: 2rem;"></a>
+            
+
+                <div>
+
+                    <div>
+
+                        <p><b>WHAT</b>: An analysis on emerging AI technology, including its integration in AR/VR, and its contribution to the digital divide for
+                            blind and visually impaired learners. Several papers and technical artifacts are evaluated on their impact in the education space. Based on this
+                            research, guidelines which are included in the paper have been created to better suit BVI learners.
+                        </p>
+
+                        <p>
+                            <b>WHY</b>: advancements in technology further leave BVI learners behind, support for disability is integral for competent spaces, accessibility benefits everyone
+                        </p>
+
+                        <p>
+                            <b>FEATURES</b>: upload image or video, several parameters and algorithm combinations to choose from
+                        </p>
+
+                    </div>
+                    
+
+                </div>
+               
             </div>
 
-        </div>
+            <div class = "project-column-two">
 
-        <div id = "aboutPageBreak">
-            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 10rem;">
-        </div>
-
-
-        <div id = "aboutPage">
-
-            <div style = "margin-top: 8rem; transform: rotate(22deg)">
-                <img class = "cactus" style = "width: 3rem;" src = "images/cactusVector.png">
+                <div>
+                     <object data = "images/TechAccessReport.pdf#toolbar=0" type="application/pdf" style = "box-shadow: 4px 4px black;"width = "100%" height="450px">
+                        <iframe
+                            src="images/TechAccessReport.pdf#toolbar=0"
+                            width="100%"
+                            height="100%"
+                            style="border: none"
+                            title="Fallback PDF Viewer"
+                            
+                        >
+                            <p>PDF not loaded. Open PDF in separate tab: <a href = "images/TechAccessReport.pdf" target = "_blank">Analysis Report</a></p>
+                        </iframe>
+                        
+                     </object>
+                </div>
+                
             </div>
 
-            <div style = "max-width: 50%; margin: auto; line-height: 0;">
-                <img alt = "mountains portrait" src = "./images/mountains2D.png" style = "width: 100%;">
-            </div>
+            <!-- ********************************** -->
 
-            <div style = "max-width: 28rem; margin-left: .4rem;">
-                <p>
-                    The simple, humble colors and stature of the California
-                    mountains that I grew up with have allowed me to embrace
-                    what others may not value as a first-generation, low income
-                    and native spanish speaker.
+        </section>
 
-                </p>
-                <br>
-                <p>
-                    With software engineering, I hope to cultivate human technology
-                    and support communities by focusing my work on education,
-                    exploration, and accessibility.
-                </p>
-            </div>
+        <hr>
 
-            <div style = "margin-top: 8rem;">
-                <img class = "cactus" style = "width: 2rem;"src = "images/cactusVector.png">
-            </div>
-
-        </div>
-
-        <div id = "skillsPageBreak">
-            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 7rem;">
-        </div>
-
-        <div style = "margin-left: 7rem; margin-top: 2rem;font-size: 1.7rem;">
-            <p>Skills</p>
-        </div>
-
-        <div class = "skillsPage">
-            <p>Java</p>
-            <img alt = "circleImage" src = "images/circle.png">
-            <p>Python</p>
-            <img alt = "circleImage" src = "images/circle.png">
-            <p>HTML/CSS</p>
-            <img alt = "circleImage" src = "images/circle.png">
-            <p>Javascript</p>
-            <img alt = "circleImage" src = "images/circle.png">
-            <p>UI/UX Design</p>
-
-        </div>
-
-        <div id = "projectPageBreak">
-            <hr style = "color: rgb(51, 36, 36, 0.21); max-width: 80rem; border: 1px solid; margin: auto; margin-top: 5rem;">
-        </div>
-
-
-        <div style = "margin-left: 7rem; margin-top: 2rem;font-size: 1.7rem;">
-            <p>Projects</p>
-        </div>
-        <div class = "projectSlide">
-
-            <div class = "projectSlideElement">
-                <p>Algorithm Path Visualizer - Java</p>
-                <a href = "projects/algorithms/algorithms.html" target="_blank"><img alt = "algorithm project" src = "projects/algorithms/images/algorithms_screen.png"></a>
-            </div>
-
-            <div class = "projectSlideElement">
-                <p>Visualizing Seamcarving - Java</p>
-                <a href = "./projects/seamcarve/seamcarve.html" target="_blank"> <img src = "./projects/seamcarve/images/seamcarve_demo.png" alt = "seamcarve project"></a>
-            </div>
-
-            <div class = "projectSlideElement">
-                <p>Gesture-Controlled Mouse - Python</p>
-                <a href = "./projects/gestureMouse/gesture.html" target = "_blank"><img src = "./projects/gestureMouse/images/gesture_demo.png" alt = "gesture project"></a>
-            </div>
-
-            <div class = "projectSlideElement">
-                <p>Screen Reader Accessibility Tool - TypeScript</p>
-                <a href = "./projects/screenReader/screenReader.html" target="_blank"><img src = "images/screenReader.png" alt = "screen reader project"></a>
-            </div>
-
-        </div>
+        
+       
+        
     </body>
 </html>
