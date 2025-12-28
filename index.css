@@ -52,7 +52,7 @@ a{
     font-size: 10vw;
     text-align: center;
     color: var(--name-color);
-    text-shadow: 3px 3px var(--text-shadow-color);
+    text-shadow: 5px 5px var(--text-shadow-color);
 }
 
 #second-grid-item{
@@ -67,7 +67,7 @@ a{
     grid-column: 3;
     font-size: 10vw;
     color:var(--name-color);
-    text-shadow: 3px 3px var(--text-shadow-color);
+    text-shadow: 5px 5px var(--text-shadow-color);
 
 }
 
@@ -141,6 +141,11 @@ hr{
     border-style:dashed;
 }
 
+.project-spacer{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:1%;
+}
 
 
 #projectPageBreak{
@@ -154,9 +159,9 @@ hr{
     
 }
 
-#projectPageBreak > div > div {
+#projectPageBreak > div > div{
     margin: auto;
-    width: 100%;
+    
     /* border-style: solid;
     border-color:rgb(16, 98, 41);
     border-width:2rem; */
@@ -188,7 +193,7 @@ hr{
     width: 40%;
     margin-right: 1%;
     margin-bottom: 1%;
-    min-width: 300px;
+    min-width: 40%;
     margin-top: 1%;
 }
 
@@ -211,7 +216,7 @@ hr{
     background-color:#b1cbe1d4;
     font-size: 1.1rem;
     text-align: left;
-    width: 50%;
+    
 }
 
 .project-column-one > div > div{
@@ -226,8 +231,19 @@ hr{
     font-size:0;
     margin-top: 1%;
     margin-bottom: 1%;
-    min-width: 400px;
+}
 
+.project-column-two > div > video{
+    width: 100%;
+    border-style:solid;
+}
+
+.project-column-two > div> img{
+    width: 100%;
+    aspect-ratio: 3.3/2;
+    margin: auto;
+    border-style: solid;
+    box-shadow: 6px 6px rgb(0, 0, 0);
 }
 
 .about-text{
@@ -236,6 +252,7 @@ hr{
     margin: none;
     margin-top: 2%;
     background-color: #BCE6AF;
+    min-width: 40%;
     
  }
 
@@ -254,11 +271,16 @@ hr{
     margin-top:5%;
 }
 
+#overflow > img{
+    width: 100%;
+}
+
 @media only screen and (max-width: 1000px) {
 
     #aboutPageText{
         width: 100%;
         margin-right: 0%;
+        
     } 
 
     #aboutPageBreak > div > img{
@@ -274,15 +296,31 @@ hr{
 
     .project-column-two{
     width: 70%;
+    min-width: 78vw;
+    }
+
+    .project-column-two > div > video{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .project-column-two > div> img{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .project-column-two > div > object{
+        margin-top:3%;
+        margin-bottom:3%;
     }
 
     .about-text{
         background-color: rgb(19, 4, 154);
         width: 95%;
+        font-size: 2.7vw;
     }
 
-    #overflow{
-        width: 50%;
+    #overflow > img{
+        width: 100%;
         
     }
 
